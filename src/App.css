@@ -1,0 +1,40 @@
+.navbar-right { margin-right: 0px !important}
+
+.log {
+  margin: 5px 10px 0 0;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.winner {
+  font-weight: bold;
+}
+
+.loser {
+  font-weight: normal;
+}
+
+.score_container {
+  float: left;
+  padding: 5px;
+  border-right: 1px solid #ccc;
+}
+
+.away {
+  margin-left: 15px;
+  padding-right: 15px;
+}
+
+.home {
+  padding-right: 15px;
+}
+
+.score {
+  margin-left: 5px;
+}
+
+.team_selector {
+  width: 20px;
+}
