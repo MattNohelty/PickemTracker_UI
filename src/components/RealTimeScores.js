@@ -26,15 +26,17 @@ class RealTimeScores extends Component {
    }
 
   handleScoreUpdate(scoresArr) {
-    this.setState({ games: scoresArr});
+    if (this.refs.score_container) {
+      this.setState({ games: scoresArr});
+    }
   }
 
   render() {
     return (
-      <div>
-      { this.state.games.map((score, index) => (
-        <Score key={ score.game.id } score={ score } />
-      ))}
+      <div ref="score_container">
+        { this.state.games.map((score, index) => (
+          <Score key={ score.game.id } score={ score } />
+        ))}
       </div>
     );
   }

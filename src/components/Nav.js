@@ -12,7 +12,7 @@ class Nav extends Component {
     return (
       <nav className="navbar navbar-default">
         <div className="navbar-header">
-          <Link className="navbar-brand" to="/">EP's NFL Pick'em</Link>
+          <Link className="navbar-brand" to="/">NFL Pickem</Link>
         </div>
         <ul className="nav navbar-nav">
           <li>
