@@ -4,6 +4,7 @@ import Nav from './Nav';
 import PageHeader from './PageHeader';
 import TeamLogo from './TeamLogo';
 import SuccessFailure from './SuccessFailure';
+import RealTimeScores from './RealTimeScores';
 
 import { getAllGamesForYearWeek } from '../service/GameService';
 import { getUserPicksForYearWeek } from '../service/PickService';
@@ -218,6 +219,8 @@ class WeekGameList extends Component {
       <div>
         <Nav />
         <PageHeader headingText={"Week " + this.props.params.week} />
+
+        <RealTimeScores />
 
         <table className="table table-striped">
           <thead>

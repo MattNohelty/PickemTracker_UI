@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import RealTimeScores from './RealTimeScores';
 
 class PageHeader extends Component {
 
@@ -9,7 +8,6 @@ class PageHeader extends Component {
       <div>
         <h3 className="text-center">{ this.props.headingText }</h3>
         <hr/>
-        <RealTimeScores />
       </div>
     );
   }
