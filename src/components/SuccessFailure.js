@@ -6,7 +6,9 @@ class SuccessFailure extends Component {
     return (
       //TODO React docs say this is bad practice https://facebook.github.io/react-native/docs/images.html
       <span>
-        <img src={this.props.success ? require('../img/success.png') : require('../img/error.png')} style={{width: 16, height: 16}} />
+        <img src={this.props.success ? require('../img/success.png') : require('../img/error.png')} 
+             alt={this.props.success ? "Y" : "N"} 
+             style={{width: 16, height: 16}} />
       </span>
     );
   }

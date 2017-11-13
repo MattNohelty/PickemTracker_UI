@@ -25,8 +25,6 @@ class Score extends Component {
 
   render() {
 
-    var isHomeWinner = false;
-
     return (
         <div className="score_container">
 
