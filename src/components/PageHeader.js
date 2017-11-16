@@ -13,4 +13,8 @@ class PageHeader extends Component {
   }
 }
 
+PageHeader.propTypes = {
+  headingText: React.PropTypes.string.isRequired
+};
+
 export default PageHeader;

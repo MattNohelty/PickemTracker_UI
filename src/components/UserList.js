@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './Nav';
 import PageHeader from './PageHeader';
 import { getAllUsers } from '../service/UserService';
 
@@ -32,8 +31,6 @@ class UserList extends Component {
 
     return (
       <div>
-
-        <Nav />
 
         <PageHeader headingText="Users"/>
 

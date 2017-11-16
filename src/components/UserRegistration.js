@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Nav from './Nav';
 import PageHeader from './PageHeader';
 
 import { createUser } from '../service/UserService';
@@ -72,7 +71,6 @@ class UserRegistration extends Component {
     return (
 
       <div>
-        <Nav />
         <PageHeader headingText={"Register User"} />
 
         <form>

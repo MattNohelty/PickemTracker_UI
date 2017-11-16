@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Nav from './Nav';
 import PageHeader from './PageHeader';
 import TeamLogo from './TeamLogo';
 import SuccessFailure from './SuccessFailure';
@@ -217,7 +216,6 @@ class WeekGameList extends Component {
     return (
 
       <div>
-        <Nav />
         <PageHeader headingText={"Week " + this.props.params.week} />
 
         <RealTimeScores />
