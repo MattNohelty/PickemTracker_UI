@@ -75,18 +75,21 @@ class UserRegistration extends Component {
 
         <form>
           <div className="form-group">
+            
             <label htmlFor="firstName">First Name:</label>
             <input
               id="firstName" name="firstName" placeholder="Bill"
               type="text"
               className="form-control"
               onChange={(evt) => this.handleNameInputChange("firstName", evt)} />
+            
             <label htmlFor="lastName">Last Name:</label>
             <input
               id="lastName" name="lastName" placeholder="Smith"
               type="text"
               className="form-control"
               onChange={(evt) => this.handleNameInputChange("lastName", evt)} />
+            
             <label htmlFor="email">Email:</label>
             <input
               id="email" name="email" placeholder="bill@example.com"

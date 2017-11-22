@@ -14,4 +14,8 @@ class SuccessFailure extends Component {
   }
 }
 
+SuccessFailure.propTypes = {
+  success: React.PropTypes.bool.isRequired
+};
+
 export default SuccessFailure;

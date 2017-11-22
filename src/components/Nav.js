@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import ButtonLink from './ButtonLink';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+
 import '../App.css';
 
 class Nav extends Component {
@@ -21,8 +24,9 @@ class Nav extends Component {
           <li><Link to={"/week/" + year + "/" + weekNumber + "/games"}>Games</Link></li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
+          <li>{this.props.user.firstName}</li>
           <li><ButtonLink url="/user/register" text="Sign Up" class="btn btn-info log"/></li>
-          <li><button className="btn btn-info log">Log In</button></li>
+          <li><ButtonLink url="/user/login" text="Log In" class="btn btn-info log"/></li>
           <li><button className="btn btn-danger log">Log out </button></li>
         </ul>
       </nav>
@@ -30,4 +34,10 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+function mapStateToProps(state, props) {
+  return {
+    user: state.user
+  };
+}
+
+export default connect(mapStateToProps)(Nav);

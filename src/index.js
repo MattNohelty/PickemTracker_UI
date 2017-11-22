@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import UserList from './components/UserList';
 import UserRegistration from './components/UserRegistration';
+import LoginContainer from './components/LoginContainer';
 import WeekGameList from './components/WeekGameList';
 import App from './components/App';
 import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
@@ -11,6 +12,7 @@ const Root = () => {
     <Router history={hashHistory}>
       <Route path='/' component={App}>
         <IndexRoute component={UserList} />
+        <Route path="/user/login" component={LoginContainer}/>
         <Route path="/user/register" component={UserRegistration}/>
         <Route path="/users" component={UserList}/>
         <Route path="/week/:year/:week/games" component={WeekGameList}/>

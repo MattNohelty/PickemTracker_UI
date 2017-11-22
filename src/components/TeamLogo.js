@@ -14,4 +14,8 @@ class TeamLogo extends Component {
 
 }
 
+TeamLogo.propTypes = {
+  team: React.PropTypes.string.isRequired
+};
+
 export default TeamLogo;

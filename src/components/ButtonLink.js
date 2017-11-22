@@ -18,4 +18,9 @@ class ButtonLink extends Component {
   }
 }
 
+ButtonLink.propTypes = {
+  url: React.PropTypes.string.isRequired,
+  text: React.PropTypes.string.isRequired
+};
+
 export default ButtonLink;
